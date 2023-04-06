@@ -1,19 +1,12 @@
 {
-  "name": "go-fullstack-fr-activity",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "start": "run-script-os",
-    "start:linux:darwin": "concurrently \"node ./node_modules/.bin/http-server -a localhost -p 8081\"  \"sleep 1 && open http://localhost:8081\"",
-    "start:win32": "node node_modules/live-server/live-server --port=8081"
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
-    "concurrently": "^5.0.0",
-    "http-server": "^0.11.1",
-    "live-server": "^1.2.1",
-    "run-script-os": "^1.0.7"
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
   }
 }
